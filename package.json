@@ -1,5 +1,5 @@
 {
-  "name": "eldr",
+  "name": "@mailbutler/eldr",
   "version": "1.0.0",
   "description": "Fast and accurate natural language detector based on eld by Nito TM - refactored by Bernhard K. Weisshuhn and Fabian Jäger.",
   "main": "lib/index.js",
