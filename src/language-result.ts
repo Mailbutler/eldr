@@ -7,8 +7,8 @@ Package npmjs.com/package/eld
 
 import ISO6391 from "iso-639-1";
 
-import { avgScore } from "./avg-score.js";
-import { LangCodes } from "./language-data.js";
+import { avgScore } from "./avg-score";
+import { LangCodes } from "./language-data";
 
 export class LanguageResult {
   iso639_1: string;

@@ -3,10 +3,10 @@ License https://www.apache.org/licenses/LICENSE-2.0 Apache-2.0
 Original Author Nito T.M. (https://github.com/nitotm)
 */
 
-import { dictionary } from "./dictionary.js";
-import { LanguageData, NgramModule } from "./language-data.js";
-import { LanguageResult } from "./language-result.js";
-import { matchDomains, separators } from "./regex-patterns.js";
+import { dictionary } from "./dictionary";
+import { LanguageData, NgramModule } from "./language-data";
+import { LanguageResult } from "./language-result";
+import { matchDomains, separators } from "./regex-patterns";
 
 export class ELDR {
   #languageData: LanguageData;
@@ -113,16 +113,16 @@ export class ELDR {
  */
 function getCleanTxt(str: string) {
   // Remove URLS
-  str = str.replaceAll(
+  str = str.replace(
     /[hw]((ttps?:\/\/(www\.)?)|ww\.)([^\s#./?-]+\.?)+(\/\S*)?/gi,
     " "
   );
   // Remove emails
-  str = str.replaceAll(/[\w!$%&+.`’-]+@[\d.A-Za-z-]+\.[\dA-Za-z-]{2,64}/g, " ");
+  str = str.replace(/[\w!$%&+.`’-]+@[\d.A-Za-z-]+\.[\dA-Za-z-]{2,64}/g, " ");
   // Remove .com domains
   str = str.replace(matchDomains, " ");
   // Remove alphanumerical/number codes
-  str = str.replaceAll(/[A-Za-z]*\d+[\dA-Za-z]*/g, " ");
+  str = str.replace(/[A-Za-z]*\d+[\dA-Za-z]*/g, " ");
   return str;
 }
 

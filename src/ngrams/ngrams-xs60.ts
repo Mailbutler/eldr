@@ -6,7 +6,7 @@ Author Nito T.M. (https://github.com/nitotm)
 Package npmjs.com/package/eld
 */
 
-import { NgramModule } from "../language-data.js";
+import { NgramModule } from "../language-data";
 
 export const ngramsData: NgramModule = {
   type: "XS60",

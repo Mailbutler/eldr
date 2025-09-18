@@ -1,4 +1,4 @@
-export { eldr as extraSmall } from "./extra-small.js";
-export { eldr as large } from "./large.js";
-export { eldr, eldr as medium } from "./medium.js";
-export { eldr as small } from "./small.js";
+export { eldr as extraSmall } from "./extra-small";
+export { eldr as large } from "./large";
+export { eldr, eldr as medium } from "./medium";
+export { eldr as small } from "./small";

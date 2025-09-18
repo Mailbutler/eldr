@@ -1,5 +1,5 @@
-import { ELDR } from "./eldr.js";
-import { ngramsData } from "./ngrams/ngrams-xs60.js";
+import { ELDR } from "./eldr";
+import { ngramsData } from "./ngrams/ngrams-xs60";
 
 const eldr = new ELDR(ngramsData);
 export { eldr };
