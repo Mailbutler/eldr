@@ -1,6 +1,6 @@
 {
   "name": "@mailbutler/eldr",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Fast and accurate natural language detector based on eld by Nito TM - refactored by Bernhard K. Weisshuhn and Fabian Jäger.",
   "main": "dist/index.js",
   "scripts": {
@@ -45,5 +45,27 @@
   },
   "dependencies": {
     "iso-639-1": "^3.1.5"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./extra-small": {
+      "import": "./dist/extra-small.js",
+      "require": "./dist/extra-small.cjs"
+    },
+    "./small": {
+      "import": "./dist/small.js",
+      "require": "./dist/small.cjs"
+    },
+    "./medium": {
+      "import": "./dist/medium.js",
+      "require": "./dist/medium.cjs"
+    },
+    "./large": {
+      "import": "./dist/large.js",
+      "require": "./dist/large.cjs"
+    }
   }
 }
